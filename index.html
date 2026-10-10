@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stay Treasure Cay | Treasure Cay, Bahamas</title>
+
+    <meta name="description"
+          content="Stay Treasure Cay — beautiful vacation accommodations, turquoise waters, white-sand beaches and unforgettable island days in Treasure Cay, Abaco, Bahamas.">
+
+    <meta name="theme-color" content="#083f46">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=20260811-final">
+    <link rel="stylesheet" href="/assets/css/puppy.css?v=1">
+
+<style>
+:root{
+  --ink:#073f49;
+  --deep:#07383f;
+  --teal:#0a93a3;
+  --aqua:#15c0c9;
+  --cream:#f5f1e9;
+  --pale:#e8f2f0;
+  --white:#fff;
+  --coral:#ff5661;
+  --blue:#204a9b;
+  --max:1230px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--ink);
+  background:#fff;
+  font-family:"DM Sans",Arial,sans-serif;
+  font-size:16px;
+  line-height:1.65;
+}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+button{font:inherit}
+.site-header,#site-header{
+  position:fixed;z-index:1000;top:0;left:0;width:100%;
+  color:#fff;
+  background:rgba(5,55,62,.90);
+  transition:background .25s,box-shadow .25s;
+}
+body.at-top #site-header{
+  background:linear-gradient(180deg,rgba(3,57,65,.72),rgba(3,57,65,.18));
+  box-shadow:none;
+}
+.header-inner{
+  width:min(calc(100% - 80px),var(--max));
+  min-height:67px;margin:auto;display:flex;align-items:center;
+  justify-content:space-between;gap:35px;
+}
+.brand{display:flex;flex-direction:column;line-height:1;color:#fff}
+.brand-top{font:700 9px/1 "DM Sans",sans-serif;letter-spacing:5px;margin-left:1px}
+.brand-main{font:600 21px/1 "Playfair Display",serif;letter-spacing:.5px}
+.brand-location{font:700 7px/1.2 "DM Sans",sans-serif;letter-spacing:3px;margin-top:3px}
+.desktop-nav{display:flex;align-items:center;gap:38px;margin-left:auto;margin-right:80px}
+.desktop-nav a{font-weight:700;font-size:13px;color:#fff}
+.header-book,.mobile-book{
+  background:#fff;color:#07383f;padding:13px 25px;font-weight:700;font-size:12px;
+  letter-spacing:.1px;white-space:nowrap;
+}
+.menu-toggle,.mobile-menu{display:none}
+
+.hero{
+  min-height:100vh;position:relative;display:flex;align-items:center;
+  overflow:hidden;color:#fff;background:#164f58;
+}
+.hero-video{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+}
+.hero:after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(4,45,52,.66) 0%,rgba(4,45,52,.38) 47%,rgba(4,45,52,.18) 100%);
+}
+.hero-overlay{display:none}
+.hero-content{
+  position:relative;z-index:2;width:min(calc(100% - 80px),var(--max));
+  margin:0 auto;padding-top:70px;
+}
+.hero-kicker,.eyebrow,.puppy-eyebrow{
+  color:#0aa8b6;font-size:10px;font-weight:800;letter-spacing:4px;
+  text-transform:uppercase;margin:0 0 22px;
+}
+.hero h1{
+  margin:0 0 22px;max-width:750px;color:#fff;
+  font:500 clamp(64px,6.2vw,105px)/.86 "Playfair Display",Georgia,serif;
+  letter-spacing:-3px;
+}
+.hero h1 em,.about h2 em{color:#16c0c9;font-style:italic;font-weight:500}
+.hero-description{max-width:530px;margin:0 0 30px;color:#fff;font-size:16px;line-height:1.55}
+.hero-actions{display:flex;gap:11px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;min-height:50px;
+  padding:0 24px;font-size:11px;font-weight:800;letter-spacing:1px;
+}
+.btn-primary{background:#0798a8;color:#fff}
+.btn-outline{border:1px solid rgba(255,255,255,.75);color:#fff;background:rgba(0,0,0,.08)}
+.hero-highlights{
+  position:absolute;z-index:2;left:50%;bottom:30px;transform:translateX(-50%);
+  width:min(calc(100% - 80px),var(--max));display:grid;grid-template-columns:repeat(4,1fr);gap:35px;
+}
+.hero-highlights div{display:grid;grid-template-columns:25px 1fr;column-gap:8px;align-items:baseline}
+.hero-highlights strong{grid-row:span 2;color:#15c0c9;font-size:10px}
+.hero-highlights span{font-size:9px;font-weight:800;letter-spacing:1.2px}
+.hero-highlights small{font-size:8px;color:rgba(255,255,255,.75)}
+
+.section-container{width:min(calc(100% - 80px),var(--max));margin:auto}
+.section{padding:110px 0}
+.about{background:var(--cream);min-height:615px}
+.about-grid{display:grid;grid-template-columns:250px 1fr;gap:40px}
+.section-label{padding-top:7px}
+.section-label span{font-size:10px;font-weight:800;letter-spacing:4px}
+.label-line{width:35px;height:2px;background:#0a9eaa;margin-top:16px}
+.about-copy{max-width:760px}
+.about h2,.center-heading h2,.experience h2,.destination h2,.booking h2,.contact h2{
+  font:500 clamp(48px,5vw,72px)/.96 "Playfair Display",Georgia,serif;
+  letter-spacing:-2px;margin:0;color:var(--ink);
+}
+.about h2{font-size:72px;margin-bottom:36px}
+.large-copy{font:400 25px/1.45 "Playfair Display",serif;margin:0 0 14px;color:#315a63}
+.about-copy>p:not(.large-copy){max-width:800px;font-size:16px;color:#3b6370;margin:0 0 17px}
+
+.stays{padding:115px 0 95px;background:#fff}
+.center-heading{text-align:center;max-width:850px;margin:0 auto 55px}
+.center-heading .eyebrow{margin-bottom:18px}
+.center-heading h2{font-size:67px;margin-bottom:18px}
+.center-heading>p:last-child{max-width:760px;margin:0 auto;color:#5c7b83;font-size:16px}
+.property-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.property-card{background:var(--cream)}
+.property-image{position:relative;height:420px;overflow:hidden}
+.property-image img{width:100%;height:100%;object-fit:cover}
+.property-tag{
+  position:absolute;top:20px;left:20px;background:#06434c;color:#fff;
+  padding:10px 14px;font-size:9px;font-weight:800;letter-spacing:1.3px
+}
+.property-content{padding:27px 28px 31px}
+.property-location{font-size:9px;color:#078c9a;font-weight:800;letter-spacing:2.5px;margin:0 0 16px}
+.property-content h3{font:500 34px/1.1 "Playfair Display",serif;margin:0 0 20px;color:var(--ink)}
+.property-content>p:not(.property-location){color:#53717a;margin:0 0 25px;max-width:650px}
+.property-buttons{display:flex;gap:9px}
+.booking-btn,.big-book{
+  display:inline-flex;align-items:center;gap:8px;padding:14px 18px;
+  color:#fff;font-size:10px;font-weight:800;letter-spacing:.5px
+}
+.airbnb{background:var(--coral)}
+.vrbo{background:var(--blue)}
+
+.puppy-offer{background:var(--cream);padding:90px 0}
+.puppy-offer-inner{width:min(calc(100% - 80px),var(--max));margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
+.puppy-offer-content h2{font:500 clamp(52px,5vw,76px)/.91 "Playfair Display",serif;letter-spacing:-2px;margin:0 0 28px}
+.puppy-description{font-size:18px;color:#476773;max-width:670px;margin:0 0 30px}
+.puppy-offer-button{display:inline-flex;background:#0b4149;color:#fff;padding:15px 24px;font-size:11px;font-weight:800;letter-spacing:.6px}
+.puppy-offer-photo img{width:100%;height:390px;object-fit:cover;border-radius:22px}
+.puppy-photo-caption{text-align:center;font:italic 25px/1.2 "Playfair Display",serif;margin-top:18px;color:#164c55}
+
+.island-video{height:390px;position:relative;overflow:hidden}
+.island-video>img{width:100%;height:100%;object-fit:cover}
+.island-video:after{content:"";position:absolute;inset:0;background:rgba(4,58,67,.37)}
+.island-video-overlay{position:absolute;z-index:2;left:max(40px,calc((100% - var(--max))/2));top:50%;transform:translateY(-50%);color:#fff}
+.island-video-overlay p{color:#13bdc5;font-size:9px;font-weight:800;letter-spacing:3px}
+.island-video-overlay h2{font:500 clamp(48px,4.5vw,68px)/.9 "Playfair Display",serif;margin:15px 0;max-width:600px;letter-spacing:-2px}
+
+.experience{padding:100px 0 105px}
+.experience .center-heading{margin-bottom:48px}
+.experience h2{font-size:57px;max-width:700px;margin:auto}
+.experience-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.experience-image{height:315px;overflow:hidden}
+.experience-image img{width:100%;height:100%;object-fit:cover}
+.experience-content{padding-top:15px}
+.experience-content>span{font-size:8px;color:#0798a8;font-weight:800;letter-spacing:2px}
+.experience-content h3{font:500 20px/1.1 "Playfair Display",serif;margin:9px 0 9px}
+.experience-content p{font-size:11px;line-height:1.55;color:#54727a;margin:0}
+
+.destination{display:grid;grid-template-columns:1fr 1fr;background:#e5f1ef}
+.destination-image{min-height:550px}
+.destination-image img{width:100%;height:100%;object-fit:cover}
+.destination-copy{display:flex;flex-direction:column;justify-content:center;padding:70px clamp(50px,9vw,150px)}
+.destination-copy h2{font-size:60px;margin:0 0 24px}
+.destination-copy p:not(.eyebrow){font-size:14px;line-height:1.7;color:#456b73;max-width:560px}
+.text-button{font-size:9px;font-weight:800;letter-spacing:1.4px;margin-top:10px}
+
+.booking{background:#043b42;color:#fff;padding:55px 0}
+.booking-inner{display:flex;align-items:center;justify-content:space-between;gap:50px}
+.booking .eyebrow{margin:0 0 8px}
+.booking h2{color:#fff;font-size:50px}
+.booking p:not(.eyebrow){color:#b8d1d1;margin:8px 0 0;font-size:13px}
+.booking-buttons{display:flex;gap:9px;flex-shrink:0}
+
+.contact{background:#eaf3f1;text-align:center;padding:105px 0 100px}
+.contact .eyebrow{margin-bottom:20px}
+.contact h2{font-size:57px;max-width:600px;margin:0 auto 18px}
+.contact p{color:#58777d;max-width:600px;margin:0 auto 22px;font-size:13px}
+.contact-link{font-weight:800;font-size:12px;color:#07505a}
+
+footer{background:#043b42;color:#fff}
+.footer-main{width:min(calc(100% - 80px),var(--max));margin:auto;padding:55px 0 40px;display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:55px}
+.footer-brand p{max-width:240px;color:#b4cbcb;font-size:11px;margin-top:18px}
+.footer-column h4{font-size:8px;letter-spacing:2px;color:#0db1bc;margin:0 0 12px}
+.footer-column a,.footer-column span{display:block;font-size:9px;color:#c1d3d3;margin:7px 0}
+.footer-bottom{width:min(calc(100% - 80px),var(--max));margin:auto;padding:14px 0 16px;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;color:#769497;font-size:8px}
+
+@media(max-width:900px){
+  .header-inner,.hero-content,.section-container,.hero-highlights,.puppy-offer-inner,.footer-main,.footer-bottom{width:calc(100% - 40px)}
+  .desktop-nav,.header-book{display:none}
+  .menu-toggle{display:flex;border:0;background:none;color:#fff;flex-direction:column;gap:5px;padding:10px}
+  .menu-toggle span{width:25px;height:2px;background:#fff}
+  .mobile-menu{display:none;background:#07383f;padding:15px 20px 22px}
+  .mobile-menu.open{display:grid}
+  .mobile-menu a{padding:9px 0;color:#fff}
+  .mobile-book{margin-top:8px;text-align:center}
+  .hero h1{font-size:clamp(55px,11vw,85px)}
+  .hero-highlights{gap:12px}
+  .hero-highlights small{display:none}
+  .about-grid,.puppy-offer-inner{grid-template-columns:1fr}
+  .about h2{font-size:58px}
+  .property-grid{grid-template-columns:1fr}
+  .experience-grid{grid-template-columns:repeat(2,1fr)}
+  .destination{grid-template-columns:1fr}
+  .destination-image{min-height:450px}
+  .booking-inner{display:block}
+  .booking-buttons{margin-top:25px}
+}
+@media(max-width:600px){
+  .section{padding:75px 0}
+  .header-inner{min-height:62px}
+  .hero-content{padding-top:80px}
+  .hero-description{font-size:14px}
+  .hero-highlights{grid-template-columns:repeat(2,1fr);bottom:20px}
+  .hero-highlights div{grid-template-columns:25px 1fr}
+  .center-heading h2,.experience h2{font-size:48px}
+  .property-image{height:300px}
+  .puppy-offer{padding:65px 0}
+  .puppy-offer-photo img{height:300px}
+  .experience-grid{grid-template-columns:1fr}
+  .experience-image{height:300px}
+  .destination-copy{padding:60px 30px}
+  .destination-copy h2{font-size:50px}
+  .booking h2{font-size:42px}
+  .footer-main{grid-template-columns:1fr 1fr;gap:35px}
+  .footer-brand{grid-column:1/-1}
+  .footer-bottom{gap:20px}
+}
+</style>
+
+</head>
+
+<body>
+
+<header id="site-header">
+
+    <div class="header-inner">
+
+        <a href="/" class="brand">
+            <span class="brand-top">STAY</span>
+            <span class="brand-main">TREASURE CAY</span>
+            <span class="brand-location">ABACO, BAHAMAS</span>
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="#stays">Stays</a>
+            <a href="#experience">Experience</a>
+            <a href="#destination">Destination</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#booking" class="header-book">
+            Book Your Stay
+        </a>
+
+        <button class="menu-toggle" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+    <div class="mobile-menu">
+        <a href="#stays">Stays</a>
+        <a href="#experience">Experience</a>
+        <a href="#destination">Destination</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+
+        <a href="#booking" class="mobile-book">
+            Book Your Stay
+        </a>
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <video class="hero-video"
+               autoplay
+               muted
+               loop
+               playsinline
+               preload="metadata">
+
+            <source src="/assets/media/Little-Shack-Of-Treasure.mp4"
+                    type="video/mp4">
+
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="hero-kicker">
+                TREASURE CAY · ABACO · BAHAMAS
+            </p>
+
+            <h1>
+                Your little piece<br>
+                of <em>paradise.</em>
+            </h1>
+
+            <p class="hero-description">
+                Escape to turquoise waters, soft white sand and
+                unforgettable island days in Treasure Cay.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#stays" class="btn btn-primary">
+                    Explore Our Stays
+                </a>
+
+                <a href="#booking" class="btn btn-outline">
+                    Book Your Stay
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-highlights">
+
+            <div>
+                <strong>01</strong>
+                <span>PRISTINE BEACHES</span>
+                <small>Miles of powder-soft white sand</small>
+            </div>
+
+            <div>
+                <strong>02</strong>
+                <span>CRYSTAL WATERS</span>
+                <small>Turquoise water as far as you can see</small>
+            </div>
+
+            <div>
+                <strong>03</strong>
+                <span>ISLAND LIFE</span>
+                <small>Slow days and local charm</small>
+            </div>
+
+            <div>
+                <strong>04</strong>
+                <span>UNFORGETTABLE</span>
+                <small>Memories that last a lifetime</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about section" id="about">
+
+        <div class="section-container about-grid">
+
+            <div class="section-label">
+                <span>ABOUT TREASURE CAY</span>
+                <div class="label-line"></div>
+            </div>
+
+            <div class="about-copy">
+
+                <h2>
+                    Slow down.<br>
+                    Breathe deeper.<br>
+                    <em>Stay awhile.</em>
+                </h2>
+
+                <p class="large-copy">
+                    Treasure Cay is more than a destination.
+                    It is a feeling.
+                </p>
+
+                <p>
+                    Warm Caribbean water, powder-soft beaches,
+                    beautiful sunsets and peaceful island days
+                    make Treasure Cay the perfect place to step
+                    away from everyday life.
+                </p>
+
+                <p>
+                    Stay Treasure Cay gives you a comfortable
+                    place to call home while you experience
+                    everything that makes this corner of The
+                    Bahamas special.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STAYS -->
+
+    <section class="stays section" id="stays">
+
+        <div class="section-container">
+
+            <div class="center-heading">
+
+                <p class="eyebrow">
+                    WHERE YOU'LL STAY
+                </p>
+
+                <h2>
+                    A place to call your own.
+                </h2>
+
+                <p>
+                    Comfortable island accommodations designed
+                    for relaxing, reconnecting and enjoying
+                    Treasure Cay at your own pace.
+                </p>
+
+            </div>
+
+
+            <div class="property-grid">
+
+
+                <!-- PROPERTY 1 -->
+
+                <article class="property-card">
+
+                    <div class="property-image">
+
+                        <img src="/assets/media/8bccff38-4f91-4574-83a7-712789b68332.jpeg"
+                             alt="Little Shack of Treasure">
+
+                        <span class="property-tag">
+                            FEATURED STAY
+                        </span>
+
+                    </div>
+
+                    <div class="property-content">
+
+                        <p class="property-location">
+                            TREASURE CAY · ABACO
+                        </p>
+
+                        <h3>
+                            Little Shack of Treasure
+                        </h3>
+
+                        <p>
+                            Your cozy island retreat, made for easy
+                            mornings, beach days and evenings beneath
+                            the Caribbean sky.
+                        </p>
+
+                        <div class="property-buttons">
+
+                        <a href="https://www.airbnb.com/rooms/636299636587811540"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="booking-btn airbnb">
+                            <span>⌂</span>
+                            Book on Airbnb
+                        </a>
+
+                    </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY 2 -->
+
+                <article class="property-card">
+
+                    <div class="property-image">
+
+                        <img src="/assets/media/bad84c34-9e5e-458c-bd7f-9e5373528f55.avif"
+                             alt="Treasure Cay island getaway">
+
+                        <span class="property-tag">
+                            ISLAND GETAWAY
+                        </span>
+
+                    </div>
+
+                    <div class="property-content">
+
+                        <p class="property-location">
+                            TREASURE CAY · BAHAMAS
+                        </p>
+
+                        <h3>
+                            Your Island Escape
+                        </h3>
+
+                        <p>
+                            Wake up surrounded by sunshine, tropical
+                            breezes and the beauty of The Bahamas
+                            right outside your door.
+                        </p>
+
+                        <div class="property-buttons">
+
+                        <a href="https://www.airbnb.com/rooms/677430876779495640"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="booking-btn airbnb">
+                            <span>⌂</span>
+                            Book on Airbnb
+                        </a>
+
+                        <a href="https://www.vrbo.com/2767178?dateless=true"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="booking-btn vrbo">
+                            <span>V</span>
+                            Book on Vrbo
+                        </a>
+
+                    </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PUPPY OFFER -->
+
+<section class="puppy-offer">
+    <div class="puppy-offer-inner">
+
+        <div class="puppy-offer-content">
+
+            <p class="puppy-eyebrow">A LITTLE SOMETHING EXTRA 🐾</p>
+
+            <h2>
+                Stay a Week.<br>
+                Take Home a<br>
+                New Best Friend.
+            </h2>
+
+            <p class="puppy-description">
+                Staying in Treasure Cay for 7 nights or more?
+                Combine your island getaway with a new family member
+                and receive <strong>$500 off a puppy.</strong>
+            </p>
+
+            <a
+                href="https://championbullies.com/#contact"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="puppy-offer-button"
+            >
+                Explore the Puppy Offer <span>↗</span>
+            </a>
+
+        </div>
+
+        <div class="puppy-offer-photo">
+            <img
+                src="/assets/media/puppy-offer.jpg"
+                alt="Bulldog puppy available through the puppy offer"
+            >
+            <div class="puppy-photo-caption">
+                Your future island companion?
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ISLAND LIFE -->
+
+
+
+
+
+<section class="island-video">
+
+    <img
+        src="/assets/media/95566d9e-fc61-4eb4-9433-89f25072944e.webp"
+        alt="Treasure Cay Bahamas"
+    >
+
+    <div class="island-video-overlay">
+
+        <p>ISLAND LIFE</p>
+
+        <h2>
+            This is what<br>
+            Sunday morning<br>
+            looks like here.
+        </h2>
+
+    </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+
+
+
+
+    <section class="experience section" id="experience">
+
+        <div class="section-container">
+
+            <div class="center-heading">
+
+                <p class="eyebrow">
+                    THE TREASURE CAY EXPERIENCE
+                </p>
+
+                <h2>
+                    Make the island your itinerary.
+                </h2>
+
+                <p>
+                    Some days are for exploring. Some are for
+                    doing absolutely nothing. In Treasure Cay,
+                    both are the right choice.
+                </p>
+
+            </div>
+
+
+            <div class="experience-grid">
+
+                <article class="experience-card">
+
+                    <div class="experience-image">
+                        <img src="/assets/media/3e43344f-ef3a-4cc1-b292-fbe6b8e8990d.avif"
+                             alt="Turquoise waters in Treasure Cay">
+                    </div>
+
+                    <div class="experience-content">
+                        <span>01</span>
+                        <h3>Turquoise Waters</h3>
+                        <p>
+                            Spend your days surrounded by some of
+                            the clearest water in the Caribbean.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="experience-card">
+
+                    <div class="experience-image">
+                        <img src="/assets/media/photo-1544551763-46a013bb70d5.avif"
+                             alt="Treasure Cay beach">
+                    </div>
+
+                    <div class="experience-content">
+                        <span>02</span>
+                        <h3>Slow Beach Days</h3>
+                        <p>
+                            White sand, warm sunshine and nowhere
+                            you need to be.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="experience-card">
+
+                    <div class="experience-image">
+                        <img src="/assets/media/aea55c9b-90e7-4380-b155-318a8d43c495.avif"
+                             alt="Island living in Treasure Cay">
+                    </div>
+
+                    <div class="experience-content">
+                        <span>03</span>
+                        <h3>Island Living</h3>
+                        <p>
+                            Discover the relaxed pace and natural
+                            beauty of the Abacos.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="experience-card">
+
+                    <div class="experience-image">
+                        <img src="/assets/media/91f1a82e-639c-4182-abae-1328f869429f.avif"
+                             alt="Treasure Cay sunset">
+                    </div>
+
+                    <div class="experience-content">
+                        <span>04</span>
+                        <h3>Unforgettable Sunsets</h3>
+                        <p>
+                            End each day with breathtaking colors
+                            across the Caribbean sky.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DESTINATION -->
+
+    <section class="destination" id="destination">
+
+        <div class="destination-image">
+
+            <img src="/assets/media/photo-1544551763-46a013bb70d5-1.avif"
+                 alt="Treasure Cay Bahamas">
+
+        </div>
+
+        <div class="destination-copy">
+
+            <p class="eyebrow">
+                THE DESTINATION
+            </p>
+
+            <h2>
+                Welcome to<br>
+                Treasure Cay.
+            </h2>
+
+            <p>
+                A little corner of The Bahamas where the days
+                feel longer, the water looks brighter and life
+                moves a little slower.
+            </p>
+
+            <p>
+                Whether you're planning a romantic escape,
+                a family vacation or simply need a few days
+                away from everything, Treasure Cay makes it
+                easy to disconnect and enjoy the moment.
+            </p>
+
+            <a href="#booking" class="text-button">
+                PLAN YOUR ESCAPE
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOOKING CTA -->
+
+    <section class="booking" id="booking">
+
+        <div class="section-container booking-inner">
+
+            <div>
+
+                <p class="eyebrow">
+                    READY TO ESCAPE?
+                </p>
+
+                <h2>
+                    Book your island getaway.
+                </h2>
+
+                <p>
+                    Choose your preferred booking platform and
+                    start planning your Treasure Cay adventure.
+                </p>
+
+            </div>
+
+            <div class="booking-buttons">
+
+                <a href="https://www.airbnb.com/rooms/636299636587811540"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="big-book airbnb">
+                    <span>⌂</span>
+                    Book on Airbnb
+                </a>
+
+                <a href="https://www.vrbo.com/2767178?dateless=true"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="big-book vrbo">
+                    <span>V</span>
+                    Book on Vrbo
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <div class="section-container">
+
+            <p class="eyebrow">
+                QUESTIONS?
+            </p>
+
+            <h2>
+                Let's get you<br>
+                to the island.
+            </h2>
+
+            <p>
+                Have questions about a stay or planning your trip?
+                Reach out and we'll help point you in the right direction.
+            </p>
+
+            <a href="mailto:stay@staytreasurecay.com"
+               class="contact-link">
+                stay@staytreasurecay.com →
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+
+            <a href="/" class="brand footer-logo">
+                <span class="brand-top">STAY</span>
+                <span class="brand-main">TREASURE CAY</span>
+                <span class="brand-location">ABACO, BAHAMAS</span>
+            </a>
+
+            <p>
+                Your little piece of paradise in
+                Treasure Cay, Bahamas.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>EXPLORE</h4>
+
+            <a href="#stays">Stays</a>
+            <a href="#experience">Experience</a>
+            <a href="#destination">Destination</a>
+            <a href="#about">About</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>BOOKING</h4>
+
+            <a href="https://www.airbnb.com/rooms/636299636587811540"
+               target="_blank"
+               rel="noopener noreferrer">
+                Airbnb
+            </a>
+
+            <a href="https://www.vrbo.com/2767178?dateless=true"
+               target="_blank"
+               rel="noopener noreferrer">
+                Vrbo
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>CONTACT</h4>
+
+            <a href="mailto:stay@staytreasurecay.com">
+                stay@staytreasurecay.com
+            </a>
+
+            <span>
+                Treasure Cay, Abaco
+            </span>
+
+            <span>
+                The Bahamas
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Stay Treasure Cay
+        </span>
+
+        <span>
+            All Rights Reserved
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script src="/assets/js/main.js?v=20260811-final"></script>
+
+
+<script>
+(function(){
+  const header = document.getElementById('site-header');
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.mobile-menu');
+
+  function updateHeader(){
+    document.body.classList.toggle('at-top', window.scrollY < 30);
+  }
+  updateHeader();
+  window.addEventListener('scroll', updateHeader, {passive:true});
+
+  if(toggle && menu){
+    toggle.addEventListener('click', function(){
+      menu.classList.toggle('open');
+      toggle.setAttribute('aria-label', menu.classList.contains('open') ? 'Close menu' : 'Open menu');
+    });
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ menu.classList.remove('open'); });
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
