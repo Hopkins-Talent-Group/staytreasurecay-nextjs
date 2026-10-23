@@ -117,7 +117,7 @@ export const site = {
         description:
           "Wake up surrounded by sunshine, tropical breezes and the beauty of The Bahamas right outside your door.",
         image: {
-          src: "/media/Little-Shack-Of-Treasure.mp4",
+          src: "/media/Little-Shack-Of-Treasure-v2.mp4",
           alt: "Treasure Cay island getaway",
         },
         buttons: [
