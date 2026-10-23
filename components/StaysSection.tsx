@@ -1,9 +1,9 @@
 import BookButtons from "@/components/BookButtons";
 import SectionHeading from "@/components/SectionHeading";
 import SmartImage from "@/components/SmartImage";
-import { site } from "@/data/site";
+import { contact, site } from "@/data/site";
 
-const { stays } = site;
+const { stays, booking } = site;
 
 export default function StaysSection() {
   return (
@@ -14,6 +14,10 @@ export default function StaysSection() {
           title={stays.title}
           description={stays.description}
         />
+
+        <a href={contact.phone.href} className="contact-link">
+          {booking.directCta ?? "Benny - 321-276-1159 text or call →"}
+        </a>
 
         <div className="property-grid">
           {stays.properties.map((property) => {

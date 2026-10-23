@@ -378,6 +378,22 @@ button {
   color: var(--muted);
 }
 
+.stays .contact-link {
+  display: block;
+  width: fit-content;
+  margin: -35px auto 45px;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--teal-dark);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.stays .contact-link:hover {
+  color: var(--teal);
+  transform: translateX(3px);
+}
+
 .property-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -646,6 +662,22 @@ button {
 .booking p {
   color: rgba(255, 255, 255, 0.7);
   max-width: 500px;
+}
+
+.booking .contact-link {
+  display: inline-block;
+  margin-top: 18px;
+  color: #42c2c7;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.booking .contact-link:hover {
+  color: #fff;
+  transform: translateX(3px);
 }
 
 .booking-buttons {

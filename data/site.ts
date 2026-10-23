@@ -236,6 +236,7 @@ export const site = {
     title: "Book your island getaway.",
     description:
       "Choose your preferred booking platform and start planning your Treasure Cay adventure.",
+    directCta: "Benny - 321-276-1159 text or call →",
   },
 
   contact: {

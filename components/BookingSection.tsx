@@ -1,5 +1,5 @@
 import BookButtons from "@/components/BookButtons";
-import { booking as bookingLinks, site } from "@/data/site";
+import { booking as bookingLinks, contact, site } from "@/data/site";
 
 const { booking } = site;
 
@@ -13,6 +13,11 @@ export default function BookingSection() {
           <h2>{booking.title}</h2>
 
           <p>{booking.description}</p>
+
+          <a href={contact.phone.href} className="contact-link">
+            {booking.directCta ?? "Benny - 321-276-1159 text or call →"}
+          </a>
+
         </div>
 
         <div className="booking-buttons">
