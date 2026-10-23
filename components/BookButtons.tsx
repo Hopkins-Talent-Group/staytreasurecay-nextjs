@@ -3,6 +3,7 @@ import { booking } from "@/data/site";
 type BookButtonsProps = {
   variant: "hero" | "card" | "cta";
   airbnbHref: string;
+  vrboHref?: string;
   showVrbo?: boolean;
   showNumber?: boolean;
   showPhoneIcon?: boolean;
@@ -21,6 +22,7 @@ const classes = {
 export default function BookButtons({
   variant,
   airbnbHref,
+  vrboHref = booking.vrbo.href,
   showVrbo = true,
   showNumber = false,
   showPhoneIcon = true,
@@ -41,7 +43,7 @@ export default function BookButtons({
 
       {showVrbo && (
         <a
-          href={booking.vrbo.href}
+          href={vrboHref}
           target="_blank"
           rel="noopener noreferrer"
           className={cls.v}

@@ -16,32 +16,40 @@ export default function StaysSection() {
         />
 
         <div className="property-grid">
-          {stays.properties.map((property) => (
-            <article className="property-card" key={property.title}>
-              <div className="property-image">
-                <SmartImage src={property.image.src} alt={property.image.alt} />
-                <span className="property-tag">{property.tag}</span>
-              </div>
+          {stays.properties.map((property) => {
+            const airbnbBtn = property.buttons.find((button) =>
+              button.variant.startsWith("airbnb"),
+            );
+            const vrboBtn = property.buttons.find((button) =>
+              button.variant.startsWith("vrbo"),
+            );
 
-              <div className="property-content">
-                <p className="property-location">{property.location}</p>
-
-                <h3>{property.title}</h3>
-
-                <p>{property.description}</p>
-
-                <div className="property-buttons">
-                  <BookButtons
-                    variant="card"
-                    airbnbHref={property.buttons[0].href}
-                    showVrbo={property.buttons.some(
-                      (button) => button.variant === "vrbo",
-                    )}
-                  />
+            return (
+              <article className="property-card" key={property.title}>
+                <div className="property-image">
+                  <SmartImage src={property.image.src} alt={property.image.alt} />
+                  <span className="property-tag">{property.tag}</span>
                 </div>
-              </div>
-            </article>
-          ))}
+
+                <div className="property-content">
+                  <p className="property-location">{property.location}</p>
+
+                  <h3>{property.title}</h3>
+
+                  <p>{property.description}</p>
+
+                  <div className="property-buttons">
+                    <BookButtons
+                      variant="card"
+                      airbnbHref={airbnbBtn?.href ?? property.buttons[0].href}
+                      vrboHref={vrboBtn?.href}
+                      showVrbo={Boolean(vrboBtn)}
+                    />
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

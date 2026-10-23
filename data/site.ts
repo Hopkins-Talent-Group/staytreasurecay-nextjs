@@ -8,9 +8,10 @@
  */
 
 const links = {
-  airbnbLittleShack: "https://www.airbnb.com/rooms/636299636587811540",
-  airbnbIslandEscape: "https://www.airbnb.com/rooms/677430876779495640",
+  airbnbIslandEscape: "https://www.airbnb.com/rooms/636299636587811540",
+  airbnbLittleShack: "https://www.airbnb.com/rooms/677430876779495640",
   vrbo: "https://www.vrbo.com/2767178?dateless=true",
+  vrbo2: "https://www.vrbo.com/2667506?dateless=true",
   email: "mailto:stay@staytreasurecay.com",
 };
 
@@ -27,6 +28,7 @@ export const contact = {
 export const booking = {
   airbnb: { label: "Book on Airbnb", href: links.airbnbLittleShack },
   vrbo: { label: "Book on Vrbo", href: links.vrbo },
+  vrbo2: { label: "Book on Vrbo", href: links.vrbo2 },
   airbnb2: { label: "Book on Airbnb", href: links.airbnbIslandEscape },
   direct: {
     href: contact.phone.href,
@@ -107,15 +109,16 @@ export const site = {
     description:
       "Comfortable island accommodations designed for relaxing, reconnecting and enjoying Treasure Cay at your own pace.",
     properties: [
+      
       {
         tag: "FEATURED STAY",
-        location: "TREASURE CAY · ABACO",
+        location: "TREASURE CAY · BAHAMAS",
         title: "Little Shack of Treasure",
         description:
-          "Your cozy island retreat, made for easy mornings, beach days and evenings beneath the Caribbean sky.",
+          "Wake up surrounded by sunshine, tropical breezes and the beauty of The Bahamas right outside your door.",
         image: {
-          src: "/images/8bccff38-4f91-4574-83a7-712789b68332.jpeg",
-          alt: "Little Shack of Treasure",
+          src: "/images/bad84c34-9e5e-458c-bd7f-9e5373528f55.avif",
+          alt: "Treasure Cay island getaway",
         },
         buttons: [
           {
@@ -124,17 +127,23 @@ export const site = {
             href: links.airbnbLittleShack,
             variant: "airbnb",
           },
+          {
+            label: "Book on Vrbo",
+            icon: "V",
+            href: links.vrbo,
+            variant: "vrbo",
+          },
         ],
       },
       {
         tag: "ISLAND GETAWAY",
-        location: "TREASURE CAY · BAHAMAS",
-        title: "Your Island Escape",
+        location: "TREASURE CAY · ABACO",
+        title: "Sunday Morning",
         description:
-          "Wake up surrounded by sunshine, tropical breezes and the beauty of The Bahamas right outside your door.",
+          "Your cozy island retreat, made for easy mornings, beach days and evenings beneath the Caribbean sky.",
         image: {
-          src: "/images/bad84c34-9e5e-458c-bd7f-9e5373528f55.avif",
-          alt: "Treasure Cay island getaway",
+          src: "/images/8bccff38-4f91-4574-83a7-712789b68332.jpeg",
+          alt: "Sunday Morning Treasure Cay",
         },
         buttons: [
           {
@@ -146,8 +155,8 @@ export const site = {
           {
             label: "Book on Vrbo",
             icon: "V",
-            href: links.vrbo,
-            variant: "vrbo",
+            href: links.vrbo2,
+            variant: "vrbo2",
           },
         ],
       },
@@ -174,7 +183,7 @@ export const site = {
         title: "Turquoise Waters",
         text: "Spend your days surrounded by some of the clearest water in the Caribbean.",
         image: {
-          src: "/images/3e43344f-ef3a-4cc1-b292-fbe6b8e8990d.avif",
+          src: "/images/Turquoise-Waters.png",
           alt: "Turquoise waters in Treasure Cay",
         },
       },
@@ -183,7 +192,7 @@ export const site = {
         title: "Slow Beach Days",
         text: "White sand, warm sunshine and nowhere you need to be.",
         image: {
-          src: "/images/photo-1544551763-46a013bb70d5.avif",
+          src: "/images/Slow-beach-days.png",
           alt: "Treasure Cay beach",
         },
       },
@@ -192,7 +201,7 @@ export const site = {
         title: "Island Living",
         text: "Discover the relaxed pace and natural beauty of the Abacos.",
         image: {
-          src: "/images/aea55c9b-90e7-4380-b155-318a8d43c495.avif",
+          src: "/images/Island-Living.png",
           alt: "Island living in Treasure Cay",
         },
       },
@@ -201,7 +210,7 @@ export const site = {
         title: "Unforgettable Sunsets",
         text: "End each day with breathtaking colors across the Caribbean sky.",
         image: {
-          src: "/images/91f1a82e-639c-4182-abae-1328f869429f.avif",
+          src: "/images/Unforgettable-Sunsets.jpeg",
           alt: "Treasure Cay sunset",
         },
       },
