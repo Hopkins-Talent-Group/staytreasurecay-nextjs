@@ -1,4 +1,5 @@
 import BookButtons from "@/components/BookButtons";
+import CallBennyButton from "@/components/CallBennyButton";
 import SectionHeading from "@/components/SectionHeading";
 import SmartImage from "@/components/SmartImage";
 import { contact, site } from "@/data/site";
@@ -15,9 +16,14 @@ export default function StaysSection() {
           description={stays.description}
         />
 
-        <a href={contact.phone.href} className="contact-link">
-          {booking.directCta ?? "Benny - 321-276-1159 text or call →"}
-        </a>
+        <div className="stays-cta-wrap">
+          <CallBennyButton
+            phoneHref={contact.phone.href}
+            phoneNumber={contact.phone.display}
+            label={booking.directCta}
+            variant="stays"
+          />
+        </div>
 
         <div className="property-grid">
           {stays.properties.map((property) => {

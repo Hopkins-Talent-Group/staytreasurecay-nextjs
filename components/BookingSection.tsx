@@ -1,4 +1,5 @@
 import BookButtons from "@/components/BookButtons";
+import CallBennyButton from "@/components/CallBennyButton";
 import { booking as bookingLinks, contact, site } from "@/data/site";
 
 const { booking } = site;
@@ -14,10 +15,12 @@ export default function BookingSection() {
 
           <p>{booking.description}</p>
 
-          <a href={contact.phone.href} className="contact-link">
-            {booking.directCta ?? "Benny - 321-276-1159 text or call →"}
-          </a>
-
+          <CallBennyButton
+            phoneHref={contact.phone.href}
+            phoneNumber={contact.phone.display}
+            label={booking.directCta}
+            variant="booking"
+          />
         </div>
 
         <div className="booking-buttons">

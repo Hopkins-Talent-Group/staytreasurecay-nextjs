@@ -378,20 +378,85 @@ button {
   color: var(--muted);
 }
 
-.stays .contact-link {
-  display: block;
-  width: fit-content;
+.stays-cta-wrap {
+  display: flex;
+  justify-content: center;
   margin: -35px auto 45px;
-  font-weight: 700;
-  font-size: 15px;
-  color: var(--teal-dark);
-  text-decoration: none;
-  transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.stays .contact-link:hover {
-  color: var(--teal);
+.call-benny-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 26px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.call-benny-btn .call-benny-icon {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.call-benny-btn .call-benny-arrow {
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.call-benny-btn:hover .call-benny-arrow {
   transform: translateX(3px);
+}
+
+.call-benny-btn .call-benny-action {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+/* Variant in Stays Section */
+.call-benny-btn--stays {
+  background: var(--teal-dark, #083f46);
+  color: #fff;
+  border: 1px solid var(--teal-dark, #083f46);
+}
+
+.call-benny-btn--stays:hover {
+  background: var(--teal, #0798a8);
+  border-color: var(--teal, #0798a8);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(8, 63, 70, 0.2);
+}
+
+.call-benny-btn--stays.is-revealed {
+  background: var(--teal, #0798a8);
+  border-color: var(--teal, #0798a8);
+  color: #fff;
+}
+
+/* Variant in Booking Section */
+.call-benny-btn--booking {
+  margin-top: 22px;
+  background: rgba(66, 194, 199, 0.12);
+  color: #42c2c7;
+  border: 1px solid #42c2c7;
+}
+
+.call-benny-btn--booking:hover,
+.call-benny-btn--booking.is-revealed {
+  background: #42c2c7;
+  border-color: #42c2c7;
+  color: #043b42;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(66, 194, 199, 0.25);
 }
 
 .property-grid {
