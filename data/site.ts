@@ -117,7 +117,7 @@ export const site = {
         description:
           "Wake up surrounded by sunshine, tropical breezes and the beauty of The Bahamas right outside your door.",
         image: {
-          src: "/images/bad84c34-9e5e-458c-bd7f-9e5373528f55.avif",
+          src: "/media/Little-Shack-Of-Treasure.mp4",
           alt: "Treasure Cay island getaway",
         },
         buttons: [
@@ -142,7 +142,7 @@ export const site = {
         description:
           "Your cozy island retreat, made for easy mornings, beach days and evenings beneath the Caribbean sky.",
         image: {
-          src: "/images/8bccff38-4f91-4574-83a7-712789b68332.jpeg",
+          src: "/media/Sunday-Morning.mp4",
           alt: "Sunday Morning Treasure Cay",
         },
         buttons: [

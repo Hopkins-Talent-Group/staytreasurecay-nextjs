@@ -394,13 +394,16 @@ button {
   overflow: hidden;
 }
 
-.property-image img {
+.property-image img,
+.property-image video {
+  width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-.property-card:hover .property-image img {
+.property-card:hover .property-image img,
+.property-card:hover .property-image video {
   transform: scale(1.04);
 }
 
@@ -478,7 +481,9 @@ button {
   overflow: hidden;
 }
 
-.island-video > img {
+.island-video > img,
+.island-video > video {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -1277,7 +1282,8 @@ body.at-top #site-header {
   height: 420px;
   overflow: hidden;
 }
-.property-image img {
+.property-image img,
+.property-image video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1346,7 +1352,8 @@ body.at-top #site-header {
   position: relative;
   overflow: hidden;
 }
-.island-video > img {
+.island-video > img,
+.island-video > video {
   width: 100%;
   height: 100%;
   object-fit: cover;
